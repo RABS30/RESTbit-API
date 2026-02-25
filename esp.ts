@@ -1,5 +1,5 @@
-//% weight=10 color=#e0dd10 icon="\uf1eb" block="WiFi"
-namespace wifi {
+//% weight=10 color=#e0dd10 icon="\uf1eb" block="ESP"
+namespace esp {
 
     /**
      * Show Hello text

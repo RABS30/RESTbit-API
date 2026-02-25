@@ -7,7 +7,7 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "wifi.ts",
+        "esp.ts",
         "README.md"
     ],
     "testFiles": [
