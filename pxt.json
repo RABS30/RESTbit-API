@@ -1,6 +1,6 @@
 {
     "name": "RESTbit API",
-    "description": "",
+    "description": "This extension is for anyone who wants to use the microbit to communicate with other devices using the REST API.",
     "dependencies": {
         "core": "*",
         "radio": "*",
