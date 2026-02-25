@@ -13,9 +13,11 @@ namespace esp8266 {
         _txPin = tx
         serial.redirect(tx, rx, baud)
         basic.pause(2000)
-        sendCommand("AT")
+        sendCommand("AT+RESTORE")
         basic.pause(2000)
         sendCommand("ATE0")
+        basic.pause(2000)
+        sendCommand("AT")
 
         return serial.readString()
     }
