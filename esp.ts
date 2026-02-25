@@ -10,7 +10,7 @@
 /**
  * Blocks for ESP8266 WiFi module.
  */
-//% weight=10 color=#ff8000 icon="\uf1eb" block="ESP8266 WiFi"
+//% weight=10 color=#ff8000 icon="\uf1eb" block="REST ESP8266"
 namespace restapi {
     // Flag to indicate whether the ESP8266 was initialized successfully.
     let esp8266Initialized = false
