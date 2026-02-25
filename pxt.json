@@ -1,24 +1,17 @@
 {
     "name": "RESTbit API by RABS",
-    "description": "This extension is intended for anyone who wants to use the REST API for microbit to communicate with other devices.",
+    "description": "REST API extension for micro:bit to communicate with external devices (WiFi, ESP8266, HTTP, HTTPS).",
     "dependencies": {
         "core": "*"
     },
     "files": [
-        "main.blocks",
         "main.ts",
-        "esp.ts",
-        "README.md"
+        "esp.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-
-    "targetVersions": {
-        "target": "5.0.12", 
-        "targetId": "microbit"
-    },
     "supportedTargets": [
         "microbit"
     ],
