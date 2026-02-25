@@ -2,11 +2,7 @@
     "name": "RESTbit API by RABS",
     "description": "This extension is intended for anyone who wants to use the REST API for microbit to communicate with other devices.",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*",
-        "RESTbit API": "github:rabs30/restbit-api#ead37bc8f650b3fc4c0e55a066f4de06d2f0e087",
-        "RESTbit API by RABS": "github:RABS30/RESTbit-API#8191474b471b95ae2f80d2eba8d0b0ad1d4de6a8"
+        "core": "*"
     },
     "files": [
         "main.blocks",
