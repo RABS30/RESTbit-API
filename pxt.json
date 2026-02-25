@@ -1,5 +1,5 @@
 {
-    "name": "RESTbit API",
+    "name": "RESTbit API by RABS",
     "description": "This extension is intended for anyone who wants to use the REST API for microbit to communicate with other devices.",
     "dependencies": {
         "core": "*",
