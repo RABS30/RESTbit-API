@@ -1,7 +1,7 @@
 //% weight=10 color=#e0dd10 icon="\uf1eb" block="REST API"
 namespace restapi {
     const FONNTE_API_URL = "api.fonnte.com"
-    
+
     let fonnteMessageSent = false
 
     /**
@@ -24,6 +24,9 @@ namespace restapi {
 
         if (isWifiConnected() == false) return
 
+
+        sendCommand("AT+CIPSSLCCONF=0")
+        
         // Open SSL connection
         if (sendCommand("AT+CIPSTART=\"SSL\",\"" + FONNTE_API_URL + "\",443", "OK", 10000) == false) return
 
