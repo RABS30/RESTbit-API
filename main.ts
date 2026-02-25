@@ -1,4 +1,4 @@
-//% weight=10 color=#ffff00 icon="\uf1eb" block="REST API"
+//% weight=10 color=#e0dd10 icon="\uf1eb" block="REST API"
 namespace restapi {
 
     /**
