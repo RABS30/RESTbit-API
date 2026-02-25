@@ -1,8 +1,12 @@
-//% weight=100 color=#0fbc11 icon="\uf1b9" block="REST API"
-namespace restapi{
+//% weight=10 color=#ff8000 icon="\uf1eb" block="REST API"
+namespace restapi {
 
-    //% block="say Hello"
+    /**
+     * Show Hello text
+     */
+    //% block="say hello"
     export function sayHello(): void {
         basic.showString("Hello")
     }
+
 }
