@@ -7,7 +7,7 @@ namespace esp8266 {
     /**
      * Initialize ESP8266 serial connection
      */
-    //% block="init esp8266 RX %rx TX %tx baud %baud"
+    //% block="init ESP8266 RX %rx TX %tx baud %baud"
     export function init(rx: SerialPin, tx: SerialPin, baud: BaudRate): String {
         _rxPin = rx
         _txPin = tx
@@ -15,11 +15,7 @@ namespace esp8266 {
         basic.pause(2000)
         sendCommand("AT")
 
-        if (serial.readString() == 'OK') {
-            return 'Success connect to ESP'
-        } else {
-            return serial.readString()
-        }
+        return serial.readString()
     }
 
     /**
