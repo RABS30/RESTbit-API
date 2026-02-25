@@ -7,6 +7,7 @@
     "files": [
         "main.blocks",
         "main.ts",
+        "wifi.ts",
         "README.md"
     ],
     "testFiles": [
@@ -15,7 +16,7 @@
     "public": true,
 
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "5.0.12", 
         "targetId": "microbit"
     },
     "supportedTargets": [

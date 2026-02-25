@@ -1,5 +1,5 @@
-//% weight=10 color=#ffff00 icon="\uf1eb" block="REST API"
-namespace restapi {
+//% weight=10 color=#ffff00 icon="\uf1eb" block="WiFi"
+namespace wifi {
 
     /**
      * Show Hello text
