@@ -14,6 +14,8 @@ namespace esp8266 {
         serial.redirect(tx, rx, baud)
         basic.pause(2000)
         sendCommand("AT")
+        basic.pause(2000)
+        sendCommand("ATE0")
     }
 
     /**
