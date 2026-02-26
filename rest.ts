@@ -1,19 +1,13 @@
-//% weight=10 color=#e0dd10 icon="\uf1eb" block="REST"
+//% weight=10 color=#e0dd10 icon="\uf1eb" block="REST API"
 namespace restapi {
     let dataRequestSent = false
 
-    /**
-     * Return true if Fonnte message was sent successfully.
-     */
     //% subcategory="REST API"
     //% block="Request message sent"
     export function isRequestSend(): boolean {
         return dataRequestSent
     }
 
-    /**
-     * Send WhatsApp message via Fonnte
-     */
     //% subcategory="REST API"
     //% block="Send request to number %number message %message"
     export function sendRequest(number: string, message: string, url: string) {
