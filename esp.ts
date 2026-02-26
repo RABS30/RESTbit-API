@@ -205,6 +205,23 @@ namespace restapi {
     }
 
 
+    /**
+     * Connect to WiFi router.
+     * @param ssid Your WiFi SSID.
+     * @param password Your WiFi password.
+     */
+    //% weight=27
+    //% blockGap=8
+    //% blockId=esp8266_connect_wifi
+    //% block="connect to WiFi: SSID %ssid Password %password"
+    export function connectWiFi(ssid: string, password: string) {
+        // Set to station mode.
+        sendCommand("AT+CWMODE=1", "OK")
+
+        // Connect to WiFi router.
+        sendCommand("AT+CWJAP=\"" + ssid + "\",\"" + password + "\"", "OK", 20000)
+    }
+
 
     /**
      * Return true if the ESP8266 is connected to WiFi router.
@@ -231,30 +248,10 @@ namespace restapi {
     }
 
 
-
-    /**
-     * Connect to WiFi router.
-     * @param ssid Your WiFi SSID.
-     * @param password Your WiFi password.
-     */
-    //% weight=27
-    //% blockGap=8
-    //% blockId=esp8266_connect_wifi
-    //% block="connect to WiFi: SSID %ssid Password %password"
-    export function connectWiFi(ssid: string, password: string) {
-        // Set to station mode.
-        sendCommand("AT+CWMODE=1", "OK")
-
-        // Connect to WiFi router.
-        sendCommand("AT+CWJAP=\"" + ssid + "\",\"" + password + "\"", "OK", 20000)
-    }
-
     //% block="send AT command %cmd"
     export function rawCommand(cmd: string): string {
         serial.writeString(cmd + "\r\n")
         basic.pause(2000)
         return serial.readString()
     }
-
-
 }
