@@ -1,7 +1,5 @@
-//% weight=10 color=#e0dd10 icon="\uf1eb" block="REST API"
+//% weight=10 color=#e0dd10 icon="\uf1eb" block="REST"
 namespace restapi {
-    const FONNTE_API_URL = "api.fonnte.com"
-
     let dataRequestSent = false
 
     /**
