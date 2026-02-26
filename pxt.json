@@ -6,7 +6,8 @@
     },
     "files": [
         "main.ts",
-        "esp.ts"
+        "esp.ts",
+        "advanced.ts"
     ],
     "testFiles": [
         "test.ts"
