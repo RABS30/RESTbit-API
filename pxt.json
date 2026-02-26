@@ -6,13 +6,14 @@
     },
     "files": [
         "main.ts",
-        "esp.ts"
+        "esp.ts",
+        "rest.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
     "public": true,
-    "supportedTargets": [
+    "supportedTargets": [   
         "microbit"
     ],
     "preferredEditor": "tsprj"
