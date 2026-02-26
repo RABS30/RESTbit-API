@@ -1,4 +1,4 @@
-//% weight=10 color=#e0dd10 icon="\uf1eb"
+//% weight=10 color=#e0dd10 icon="\uf1eb" block="REST API"
 namespace esp {
     const FONNTE_API_URL = "api.fonnte.com"
 
