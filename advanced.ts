@@ -10,7 +10,12 @@ namespace rest {
     let result = false
 
     
-    
+    const enum Esp {
+        //% block=ESP32
+        ESP32 = "esp32",
+        //% block=ESP8266
+        ESP8266 = "esp8266"
+    }
 
 
     // Mengirim AT Command ke ESP dengan ekspektasi response
