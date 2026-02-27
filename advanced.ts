@@ -1,4 +1,4 @@
-//% weight=10 color=#ff8000 icon="\uf1eb" block="ESP II"
+//% weight=10 color=#ff8000 icon="\uf1eb" block="ESP Advanced"
 namespace rest {
     // Flag indikator apakah ESP telah terhubung atau tidak
     let espConnected = false
