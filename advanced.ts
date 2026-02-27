@@ -157,7 +157,7 @@ namespace rest {
     //% weight=30
     //% blockGap=8
     //% blockId=connect_to_esp
-    //% block="connect to ESP"
+    //% block="connect to ESP: TX %tx RX %rx Baudrate %baudrate Type %type"
     export function connect(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, type: Esp) {
         // Menghubungkan Serial Port
         serial.redirect(tx, rx, baudrate)
