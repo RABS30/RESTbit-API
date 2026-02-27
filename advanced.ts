@@ -158,7 +158,7 @@ namespace rest {
     //% blockGap=8
     //% blockId=connect_to_esp
     //% block="connect to ESP: TX %tx RX %rx Baudrate %baudrate Type %type"
-    export function connect(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, type: Esp) {
+    export function connect(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, type: Esp = Esp.ESP32) {
         // Menghubungkan Serial Port
         serial.redirect(tx, rx, baudrate)
         serial.setRxBufferSize(128)
