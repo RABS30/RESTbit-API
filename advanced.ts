@@ -8,7 +8,6 @@ namespace rest {
 
     // return untuk memberitahu apakah command berhasil atau tidak
     let result = false
-
     
     enum Esp {
     //% block="ESP32"
