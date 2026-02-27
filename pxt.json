@@ -1,5 +1,6 @@
 {
     "name": "RESTbit API by RABS",
+    "version": "2.0.0",
     "description": "REST API extension for micro:bit to communicate with external devices (WiFi, ESP, HTTP, HTTPS).",
     "dependencies": {
         "core": "*"
