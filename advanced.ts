@@ -10,12 +10,22 @@ namespace rest {
     let result = false
 
     
-    enum Esp {
-    //% block="ESP32"
-    ESP32,
-    //% block="ESP8266"
-    ESP8266
+    // =============================
+    // ESP TYPE (seperti SerialPin)
+    // =============================
+
+    //% fixedInstances
+    export class EspType {
+        private _dummy: number;
     }
+
+    //% blockNamespace=rest
+    //% blockIdentity=rest._espType
+    export const ESP32 = new EspType();
+
+    //% blockNamespace=rest
+    //% blockIdentity=rest._espType
+    export const ESP8266 = new EspType();
 
 
     // Mengirim AT Command ke ESP dengan ekspektasi response
@@ -158,7 +168,7 @@ namespace rest {
     //% blockGap=8
     //% blockId=connect_to_esp
     //% block="connect to ESP: TX %tx RX %rx Baudrate %baudrate Type %type"
-    export function connect(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, type: Esp) {
+    export function connect(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, type: EspType) {
         // Menghubungkan Serial Port
         serial.redirect(tx, rx, baudrate)
         serial.setRxBufferSize(128)
