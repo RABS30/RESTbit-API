@@ -17,7 +17,7 @@ namespace esp {
      */
     //% subcategory="Fonnte"
     //% block="send WA Fonnte target %target message %message"
-    export function sendFonnteMessage(target: string, message: string) {
+    export function sendFonnteMessage(target: string, message: string, token: string) {
 
         fonnteMessageSent = false
 
@@ -35,7 +35,7 @@ namespace esp {
         // Construct HTTP POST request
         let data = "POST /send HTTP/1.1\r\n"
         data += "Host: " + FONNTE_API_URL + "\r\n"
-        data += "Authorization: uvMKVqTmBjdrMoryFZBM\r\n"
+        data += "Authorization: " + token + "\r\n"
         data += "Content-Type: application/x-www-form-urlencoded\r\n"
         data += "Content-Length: " + body.length + "\r\n\r\n"
         data += body
