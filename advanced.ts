@@ -10,11 +10,11 @@ namespace rest {
     let result = false
 
     
-    const enum Esp {
-        //% block=ESP32
-        ESP32 = "esp32",
-        //% block=ESP8266
-        ESP8266 = "esp8266"
+    enum Esp {
+    //% block="ESP32"
+    ESP32,
+    //% block="ESP8266"
+    ESP8266
     }
 
 
