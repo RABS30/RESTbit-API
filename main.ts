@@ -1,4 +1,4 @@
-//% weight=10 color=#ff8000 icon="\uf1eb" block="ESP"`
+//% weight=10 color=#ff8000 icon="\uf1eb" block="ESP Basic"`
 namespace esp {
     // Flag to indicate whether the ESP was initialized successfully.
     let espInitialized = false
