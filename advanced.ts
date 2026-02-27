@@ -245,7 +245,7 @@ namespace rest {
 
 enum Esp {
     //% block="ESP32"
-    ESP32 = 0,
+    ESP32 = "esp32",
     //% block="ESP8266"
-    ESP8266 = 1
+    ESP8266 = "esp8266"
 }
