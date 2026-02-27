@@ -9,7 +9,13 @@ namespace rest {
     // return untuk memberitahu apakah command berhasil atau tidak
     let result = false
 
-
+    
+    declare const enum Esp {
+        //% block=ESP32
+        ESP32 = "esp32",
+        //% block=ESP8266
+        ESP8266 = "esp8266"
+    }
 
 
     // Mengirim AT Command ke ESP dengan ekspektasi response
