@@ -154,7 +154,10 @@ namespace rest {
     }
 
 
-
+    //% weight=30
+    //% blockGap=8
+    //% blockId=esp8266_is_esp8266_initialized
+    //% block="connect to ESP"
     export function connect(tx: SerialPin, rx: SerialPin, baudrate: BaudRate, type: Esp) {
         // Menghubungkan Serial Port
         serial.redirect(tx, rx, baudrate)
