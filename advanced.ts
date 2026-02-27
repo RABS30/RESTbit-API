@@ -9,11 +9,11 @@ namespace rest {
     // return untuk memberitahu apakah command berhasil atau tidak
     let result = false
     
-    enum Esp {
+    declare const enum Esp {
     //% block="ESP32"
-    ESP32,
+    ESP32 = 0,
     //% block="ESP8266"
-    ESP8266
+    ESP8266 = 1
     }
 
 
