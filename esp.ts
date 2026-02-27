@@ -16,7 +16,7 @@ namespace esp {
      * Send WhatsApp message via Fonnte
      */
     //% subcategory="Fonnte"
-    //% block="send WA Fonnte target %target message %message"
+    //% block="send WA Fonnte target %target message %message token %token"
     export function sendFonnteMessage(target: string, message: string, token: string) {
 
         fonnteMessageSent = false
