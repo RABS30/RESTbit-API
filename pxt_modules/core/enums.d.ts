@@ -585,12 +585,6 @@ declare namespace led {
     BaudRate1200 = 1200,
     }
 
-    declare const enum Esp {
-        //% block=ESP32
-        ESP32 = "esp32",
-        //% block=ESP8266
-        ESP8266 = "esp8266"
-    }
     
 declare namespace serial {
 }
@@ -631,4 +625,11 @@ declare namespace serial {
     LOGO = 121,  // MICROBIT_ID_LOGO
     }
 
+    
+declare const enum Esp {
+    //% block=ESP32
+    ESP32 = "esp32",
+    //% block=ESP8266
+    ESP8266 = "esp8266"
+}
 // Auto-generated. Do not edit. Really.
